@@ -7,7 +7,7 @@ BINARIES= mp1
 all: ${BINARIES}
 
 mp1: mp1.o naiveBayes.o
-	${CXX} $^ -o NaiveBayesClassifier.out
+	${CXX} $^ -o NaiveBayesClassifier
 
 clean:
 	/bin/rm -f ${BINARIES} *.o *.out
