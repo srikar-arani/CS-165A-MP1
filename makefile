@@ -2,11 +2,11 @@ CXX=clang++
 
 CXXFLAGS = -std=c++11 -Wall -Wextra -Wno-unused-parameter -Wno-unused-private-field
 
-BINARIES= NaiveBayesClassifier
+BINARIES= mp1
 
 all: ${BINARIES}
 
-project3: mp1.o NaiveBayes.o
+NaiveBayesClassifier: mp1.o naiveBayes.o
 	${CXX} $^ -o NaiveBayesClassifier.out
 
 clean:
