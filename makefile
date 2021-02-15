@@ -6,7 +6,7 @@ BINARIES= mp1
 
 all: ${BINARIES}
 
-NaiveBayesClassifier: mp1.o naiveBayes.o
+mp1: mp1.o naiveBayes.o
 	${CXX} $^ -o NaiveBayesClassifier.out
 
 clean:
